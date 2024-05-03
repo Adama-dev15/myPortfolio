@@ -1,16 +1,20 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeMenu from "../themes/themeToggle/ThemeToggle";
+import initAOS from "@/components/Animation";
 
 const Header = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
   const [activeLink, setActiveLink] = useState("/");
   const handlechange = (link: any) => {
     setActiveLink(link);
   };
   return (
     <div>
-      <header>
+      <header data-aos="fade-down">
         <div className="container mx-auto  py-3 relative">
           <div className="header-inner">
             <div className="content flex items-center justify-between">

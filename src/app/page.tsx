@@ -1,9 +1,10 @@
+import Accueil from "@/components/accueil/Accueil";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <h1>page accueil</h1>
+      <Accueil />
     </>
   );
 }

@@ -1,10 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CgMenuMotion } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import initAOS from "@/components/Animation";
 
 function ThemeMenu() {
+  useEffect(() => {
+    initAOS();
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const handlechange = (link: any) => {
@@ -29,7 +33,7 @@ function ThemeMenu() {
         <span className="sr-only">Toggle menu</span>
       </div>
       {menuOpen && (
-        <div className="navigation  relative">
+        <div className="navigation  relative" data-aos="fade-left">
           <nav className=" absolute h-[200px] w-[300px] right-0  top-2 bg-green-500 rounded-sm">
             <ul className="flex flex-col items-center py-4 justify-center gap-3 text-black  font-bold   z-10 ">
               <li>
