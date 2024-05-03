@@ -38,16 +38,16 @@ const Accueil = () => {
 
   return (
     <section className="accueil">
-      <div className="container mx-auto px-16 ">
+      <div className="container mx-auto md:px-16 ">
         <div className="accueil-inner">
-          <div className="content grid grid-cols-2">
+          <div className="content grid md:grid-cols-2 :grid-cols-1">
             <div
-              className="left flex flex-col gap-5 py-28"
+              className="left flex items-center justify-center md:items-start md:justify-start flex-col gap-5 py-5 md:py-28"
               data-aos="fade-right"
             >
-              <div className="info-user font-bold text-2xl flex flex-col gap-1">
-                <p>Hello, It&apos;s Me</p>
-                <p className="text-green-500 text-3xl uppercase">
+              <div className="info-user font-bold text-[20px] md:text-2xl flex flex-col gap-1">
+                <p className="text-center md:text-left">Hello, It&apos;s Me</p>
+                <p className="text-green-500 text-2xl md:text-3xl uppercase text-center md:text-left">
                   adama traoré
                 </p>
                 <p>
@@ -79,17 +79,17 @@ const Accueil = () => {
               </div>
             </div>
             <div
-              className="right  py-10 pl-24"
+              className="right  py-10 md:pl-24 flex items-center justify-center"
               //   style={{ borderRadius: "86% 14% 86% 14% / 12% 84% 16% 88% " }}
               data-aos="fade-left"
             >
-              <div className="image flex items-center justify-center bg-green-500 rounded-full w-[400px] h-[400px]">
+              <div className="image flex items-center justify-center bg-green-500 rounded-full   w-[300px] h-[300px] md:w-[400px]   md:h-[400px]">
                 <Image
                   src={image_profil}
                   width={1000}
                   height={400}
                   alt="profi"
-                  className="w-[400px] h-[400px] rounded-full"
+                  className=" w-[300px] h-[300px] md:w-[400px]   md:h-[400px] rounded-full"
                 />
               </div>
             </div>

@@ -23,7 +23,7 @@ const Header = () => {
                   ADAM<span className="text-green-500">Dev.</span>
                 </Link>
               </div>
-              <div className="absolute right-1 top-5">
+              <div className="absolute right-1 top-5 !z-[90000]">
                 <ThemeMenu />
               </div>
               <div className="navigation hidden md:block">

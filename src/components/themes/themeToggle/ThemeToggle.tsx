@@ -33,9 +33,9 @@ function ThemeMenu() {
         <span className="sr-only">Toggle menu</span>
       </div>
       {menuOpen && (
-        <div className="navigation  relative" data-aos="fade-left">
+        <div className="navigation  relative " data-aos="fade-left">
           <nav className=" absolute h-[200px] w-[300px] right-0  top-2 bg-green-500 rounded-sm">
-            <ul className="flex flex-col items-center py-4 justify-center gap-3 text-black  font-bold   z-10 ">
+            <ul className="flex flex-col items-center py-4 justify-center gap-3 text-black  font-bold    ">
               <li>
                 <Link
                   href="/"
