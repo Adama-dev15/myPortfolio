@@ -9,6 +9,7 @@ function ThemeMenu() {
   const [activeLink, setActiveLink] = useState("/");
   const handlechange = (link: any) => {
     setActiveLink(link);
+    toggleMenu();
   };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -29,7 +30,7 @@ function ThemeMenu() {
       </div>
       {menuOpen && (
         <div className="navigation  relative">
-          <nav className=" absolute h-[200px] w-[410px] right-0 top-2 bg-green-500">
+          <nav className=" absolute h-[200px]  right-0 left-0 w-full top-2 bg-green-500">
             <ul className="flex flex-col items-center py-4 justify-center gap-3 text-black  font-bold   z-10 ">
               <li>
                 <Link
