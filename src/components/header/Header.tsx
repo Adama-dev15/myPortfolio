@@ -24,7 +24,7 @@ const Header = () => {
               </div>
               <div className="navigation hidden md:block">
                 <nav>
-                  <ul className="flex items-center justify-center gap-12 font-bold text-lg">
+                  <ul className="flex items-center justify-center gap-10 font-bold text-lg">
                     <li>
                       <Link
                         href="/"

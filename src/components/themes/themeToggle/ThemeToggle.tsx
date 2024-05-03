@@ -30,7 +30,7 @@ function ThemeMenu() {
       </div>
       {menuOpen && (
         <div className="navigation  relative">
-          <nav className=" absolute h-[200px]  right-0 left-0 w-full top-2 bg-green-500">
+          <nav className=" absolute h-[200px] w-[300px] right-0  top-2 bg-green-500 rounded-sm">
             <ul className="flex flex-col items-center py-4 justify-center gap-3 text-black  font-bold   z-10 ">
               <li>
                 <Link
