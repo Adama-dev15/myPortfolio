@@ -1,10 +1,15 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { BiSolidUpArrow } from "react-icons/bi";
+import initAOS from "@/components/Animation";
 
 const Footer = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
   return (
-    <footer className="bg-neutral-900">
+    <footer className="bg-neutral-900 " data-aos="fade-up">
       <div className="container mx-auto px-5 md:px-8">
         <div className="footer-inner">
           <div className="content flex items-center justify-between py-3">
