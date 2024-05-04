@@ -38,29 +38,29 @@ const Accueil = () => {
 
   return (
     <section className="accueil">
-      <div className="container mx-auto md:px-16 ">
+      <div className="container mx-auto px-5 md:px-16 ">
         <div className="accueil-inner">
           <div className="content grid md:grid-cols-2 :grid-cols-1">
             <div
               className="left flex items-center justify-center md:items-start md:justify-start flex-col gap-5 py-5 md:py-28"
               data-aos="fade-right"
             >
-              <div className="info-user font-bold text-[25px] md:text-3xl flex flex-col gap-1">
+              <div className="info-user font-bold text-[20px] md:text-3xl flex flex-col gap-1">
                 <p className="text-center md:text-left">
                   Bonjour, c&apos;est Moi
                 </p>
                 <p className="text-green-500 text-2xl md:text-3xl uppercase text-center md:text-left">
                   adama traoré
                 </p>
-                <p>
+                <p className="text-center">
                   Et je suis un{" "}
                   <span
                     ref={typedTextRef}
-                    className="typed-text-output text-green-500"
+                    className="typed-text-output  text-green-500 "
                   ></span>
                 </p>
               </div>
-              <div className="typed-text hidden">{typedStrings}</div>
+              <div className="typed-text  hidden">{typedStrings}</div>
               <div className="reseau flex gap-5">
                 <div className="icon border cursor-pointer border-green-500 rounded-full w-8 h-8 flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-black transition duration-150  hover:shadow-lg">
                   <FaFacebookF />
