@@ -1,7 +1,7 @@
 import Apropos from "@/components/apropos/Apropos";
 import React from "react";
 
-const About = () => {
+const page = () => {
   return (
     <div>
       <Apropos />
@@ -9,4 +9,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default page;

@@ -2,19 +2,15 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ThemeMenu from "../themes/themeToggle/ThemeToggle";
-import initAOS from "@/components/Animation";
 
 const Header = () => {
-  useEffect(() => {
-    initAOS();
-  }, []);
   const [activeLink, setActiveLink] = useState("/");
   const handlechange = (link: any) => {
     setActiveLink(link);
   };
   return (
     <div>
-      <header data-aos="fade-down">
+      <header>
         <div className="container mx-auto px-3 md:px-10 py-3 relative">
           <div className="header-inner">
             <div className="content flex items-center justify-between">
@@ -23,7 +19,7 @@ const Header = () => {
                   ADAM<span className="text-green-500">Dev.</span>
                 </Link>
               </div>
-              <div className="absolute right-1 top-5 !z-[90000]">
+              <div className="absolute right-5 top-5">
                 <ThemeMenu />
               </div>
               <div className="navigation hidden md:block">

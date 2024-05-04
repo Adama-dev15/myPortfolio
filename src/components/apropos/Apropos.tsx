@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import image_profil from "@/images/WhatsApp_Image_2024-04-08_at_13.52.29-removebg-preview.png";
+import initAOS from "@/components/Animation";
 
 const Apropos = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
   return (
     <section className="apropos  bg-neutral-900">
       <div className="container mx-auto ">
@@ -25,10 +30,10 @@ const Apropos = () => {
             </div>
             <div
               className="right flex flex-col items-start justify-center px-5"
-              data-aos="fade-left "
+              data-aos="fade-left"
             >
               <div className="profil flex flex-col items-center justify-center md:items-start md:justify-start gap-4">
-                <div className="title text-center md:text-left font-bold text-[20px] md:text-2xl">
+                <div className="title text-center md:text-left font-bold text-[25px] md:text-3xl">
                   À propos de{" "}
                   <span className="uppercase text-green-500">moi</span>
                 </div>

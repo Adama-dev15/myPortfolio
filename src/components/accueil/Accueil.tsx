@@ -7,7 +7,7 @@ import Image from "next/image";
 import image_profil from "@/images/WhatsApp_Image_2024-04-08_at_13.13.02-removebg-preview.png";
 
 const typedStrings =
-  "Web Designer, Web Developer, FrontEnd Developer, Apps Designer, Apps Developer, Content Creator, UI/UX Designer";
+  "Web Designer, Développeur Web, Développeur Front-End, Designer d&apos;Applications, Développeur d&apos;Applications, Développeur Back-End, Designer UI/UX";
 
 const Accueil = () => {
   useEffect(() => {
@@ -45,13 +45,15 @@ const Accueil = () => {
               className="left flex items-center justify-center md:items-start md:justify-start flex-col gap-5 py-5 md:py-28"
               data-aos="fade-right"
             >
-              <div className="info-user font-bold text-[20px] md:text-2xl flex flex-col gap-1">
-                <p className="text-center md:text-left">Hello, It&apos;s Me</p>
+              <div className="info-user font-bold text-[25px] md:text-3xl flex flex-col gap-1">
+                <p className="text-center md:text-left">
+                  Bonjour, c&apos;est Moi
+                </p>
                 <p className="text-green-500 text-2xl md:text-3xl uppercase text-center md:text-left">
                   adama traoré
                 </p>
                 <p>
-                  And I&apos;m a{" "}
+                  Et je suis un{" "}
                   <span
                     ref={typedTextRef}
                     className="typed-text-output text-green-500"
@@ -75,7 +77,7 @@ const Accueil = () => {
               </div>
 
               <div className="down flex items-center justify-center w-max bg-green-500 rounded-full py-2 px-4 shadow-lg hover:bg-green-400">
-                <button className="font-bold text-black">Download CV</button>
+                <button className="font-bold text-black">Télécharger CV</button>
               </div>
             </div>
             <div
