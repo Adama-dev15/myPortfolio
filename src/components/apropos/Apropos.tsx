@@ -10,12 +10,11 @@ const Apropos = () => {
   }, []);
   return (
     <section className="apropos  bg-neutral-900">
-      <div className="container mx-auto ">
+      <div className="container mx-auto  px-5 md:px-8">
         <div className="apropos-inner">
-          <div className="content grid md:grid-cols-2 :grid-cols-1">
+          <div className="content grid md:grid-cols-2 :grid-cols-1 w-full">
             <div
-              className=" left  py-10 md:pl-24 flex items-center justify-center md:items-start md:justify-start"
-              //   style={{ borderRadius: "86% 14% 86% 14% / 12% 84% 16% 88% " }}
+              className=" left w-full  py-10 md:pl-24 flex items-center justify-center md:items-start md:justify-start"
               data-aos="fade-right"
             >
               <div className="image flex items-center justify-center bg-green-500 rounded-full   w-[300px] h-[300px] md:w-[400px]   md:h-[400px]">
@@ -29,7 +28,7 @@ const Apropos = () => {
               </div>
             </div>
             <div
-              className="right flex flex-col items-start justify-center px-5"
+              className="right flex flex-col items-start justify-center  w-full"
               data-aos="fade-left"
             >
               <div className="profil flex flex-col items-center justify-center md:items-start md:justify-start gap-4">
